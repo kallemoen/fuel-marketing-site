@@ -1,0 +1,23 @@
+ @import "viewports";
+
+ @mixin grid {
+	display: grid;
+	max-width: 1280px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	margin: 0em 2em;
+}
+
+.max-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
+.big-row { @include grid; :first-of-type { grid-column: 2 / span 10; } }
+.medium-row { @include grid; :first-of-type { grid-column: 4 / span 7; } }
+.small-row { @include grid; :first-of-type { grid-column: 5 / span 4; } }
+
+
+@include for-tablet-landscape-down {
+	.max-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
+	.big-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
+	.medium-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
+	.small-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
+}

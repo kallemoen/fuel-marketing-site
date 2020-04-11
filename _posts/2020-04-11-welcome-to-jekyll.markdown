@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: wrapper
 title:  "Welcome to Jekyll!"
 date:   2020-04-11 12:07:28 +0100
 categories: jekyll update
