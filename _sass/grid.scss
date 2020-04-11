@@ -1,6 +1,29 @@
- @import "viewports";
+@import "viewports";
 
- @mixin grid {
+body {
+  background-color: $balck;
+}
+
+.site-container {
+	display: flex;
+	justify-content: center;
+}
+
+// Main container for pages
+.sections {
+  margin: 3em 0em;
+}
+
+// Distance between items in main container
+.sections .section {
+  margin-bottom: 10em;
+  &:last-child {
+    margin-bottom: 0em;
+  }
+}
+
+
+@mixin grid {
 	display: grid;
 	max-width: 1280px;
 	grid-template-columns: repeat(12, 1fr);
@@ -11,9 +34,27 @@
 
 .max-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
 .big-row { @include grid; :first-of-type { grid-column: 2 / span 10; } }
-.medium-row { @include grid; :first-of-type { grid-column: 4 / span 7; } }
+.medium-row { @include grid; :first-of-type { grid-column: 3 / span 8; } }
 .small-row { @include grid; :first-of-type { grid-column: 5 / span 4; } }
 
+.dual-col {
+  display: flex;
+  flex: auto;
+
+  img {
+    width: 100%; 
+    height: auto;
+  }
+
+  > div:first-child {
+    width: 100%;
+    padding-right: 3em;
+  }
+
+  > div:last-child {
+    width: 100%;
+  }
+}
 
 @include for-tablet-landscape-down {
 	.max-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
@@ -21,3 +62,4 @@
 	.medium-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
 	.small-row { @include grid; :first-of-type { grid-column: 1 / span 12; } }
 }
+

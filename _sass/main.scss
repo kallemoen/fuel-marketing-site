@@ -5,9 +5,9 @@
 @import "mixins.scss";
 @import "button.scss";
 @import "colors.scss";
-@import "topbar.scss";
 @import "grid.scss";
 @import "mods.scss";
+@import "welcomeMat.scss";
 
 
 /*------------------------------------*\
@@ -47,9 +47,6 @@ $hr-margin: 30px;
 // Type Misc
 $font-weight-bold: 800;
 $border-color: $grey-dark;
-
-
-
 
 
 /*------------------------------------*\

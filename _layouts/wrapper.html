@@ -6,12 +6,14 @@
   <meta name="description" content="Site description">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body>
+<body class="site-container">
+	<div>
 	{% include topbar.html %}
 
 	{{ content }}
 	
 	{% include footer.html %}
+	</div>
   <script src="js/scripts.js"></script>
 </body>
 </html>
