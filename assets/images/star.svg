@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>star</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="source-card" transform="translate(-84.000000, -106.000000)" fill="#01FFC8" fill-rule="nonzero">
+            <g id="Group-21">
+                <path d="M96.9921875,121.585938 L92,118.515625 L87.0078125,121.585938 L88.4140625,115.929688 L83.9140625,112.164062 L89.7890625,111.742188 L92,106.359375 L94.2109375,111.742188 L100.085938,112.164062 L95.5859375,115.929688 L96.9921875,121.585938 Z M92,117.046875 L95.0390625,118.914062 L94.1875,115.46875 L96.9140625,113.195312 L93.3515625,112.9375 L92,109.648438 L90.6484375,112.9375 L87.0859375,113.195312 L89.8125,115.46875 L88.9609375,118.914062 L92,117.046875 Z" id="star"></path>
+            </g>
+        </g>
+    </g>
+</svg>

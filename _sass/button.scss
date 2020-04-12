@@ -77,11 +77,14 @@
   }
 }
 
-.black-btn {
-   background-color: $grey-black;
-   color: $white;
+.ghost-btn {
+   background-color: transparent;
+   color: $accent-color;
+   border: 1px solid $accent-color;
+
    &:hover {
-    background-color: lighten($grey-black, 10%);
+    background-color: $accent-color;
+    color: $white;
   }
 
   &:active {
@@ -104,6 +107,8 @@
 }
 .primary-btn {
   @include btn-theme($accent-color);
+
+  box-shadow: 7px 6px 0px -2px $black, 7px 6px 0px 0px $accent-color;
 }
 
 .big-btn {

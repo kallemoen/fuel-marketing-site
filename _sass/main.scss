@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-@import "nav";
 @import "reset.scss";
 @import "mixins.scss";
 @import "button.scss";
 @import "colors.scss";
-@import "grid.scss";
 @import "mods.scss";
 @import "welcomeMat.scss";
+@import "topbar.scss";
+@import "layouts.scss";
+@import "cards.scss";
 
 
 /*------------------------------------*\
@@ -15,20 +16,20 @@
 \*------------------------------------*/
 
 // Font Family
-$font-family: 'Roboto Slab', sans-serif;
+$font-family: 'Poppins', sans-serif;
 
 // Base Font for HTML
 $base-font-size: 16px;
 
 // Paragraph Styles
-$paragraph-color      : $black;
+$paragraph-color      : $white;
 $paragraph-size       : rem(17px);
 $paragraph-line-height: 1.5em;
 $paragraph-margin     : 20px;
 
 // Header Styles
-$header-color      : #000000;
-$header-size       : rem(40px);
+$header-color      : $white;
+$header-size       : rem(48px);
 $header-line-height: 1.25em;
 $header-margin     : $paragraph-margin * 1.2;
 
@@ -45,8 +46,17 @@ $link-color: $accent-color;
 $hr-margin: 30px;
 
 // Type Misc
-$font-weight-bold: 800;
+$font-weight-bold: 700;
 $border-color: $grey-dark;
+
+// Mark color
+
+::selection {
+  background: $accent-color; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $accent-color; /* Gecko Browsers */
+}
 
 
 /*------------------------------------*\
@@ -130,6 +140,16 @@ a {
     &:hover {
         color: darken($link-color, 20%);
     }
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: $white;
+    
+    &:hover {
+        color: darken($white, 20%);
+    }
+
 }
 
 
@@ -277,4 +297,9 @@ img {
     display: block;
     max-width: 100%;
     margin: $blockquote-margin 0;
+}
+
+svg {
+    width: 100%;
+    height: auto;
 }
