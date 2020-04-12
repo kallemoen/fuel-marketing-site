@@ -1,10 +1,27 @@
-<nav class="flex space-between align-content-center margin-2">
-	<a href="/" class="no-margin"><img class="no-margin" src="../assets/images/logo.svg" alt="" ></a>
-	<ul class="no-margin nav-links">
-		<a href="#">Blog</a>
+<header class="navigation flex space-between">
+	<a href="/"><img src="../assets/images/logo.svg" alt="logo"></a>
+	<ul class="hide-mobile">
+	    <a href="#">Blog</a>
 		<a href="#">Twitter</a>
 		<a href="#">Github</a>
 		<a href="#">Discuss</a>
-		<button href="#" onclick="openNav()" class="btn ghost-btn">{{ site.cta }}</button>
-	</ul> 
-</nav>
+		<button href="#" class="btn ghost-btn">{{ site.cta }}</button>
+	</ul>
+	<img class="hide-desk" src="../assets/images/hamburger.svg" alt="" onclick="openNav()">
+
+	<!-- Mobile navigation -->
+
+	<div id="myNav" class="overlay">
+		<div>
+			<img src="../assets/images/delete.svg" alt="" onclick="closeNav()">
+		</div>
+		
+		<ul>
+			<a href="#">Blog</a>
+			<a href="#">Twitter</a>
+			<a href="#">Github</a>
+			<a href="#">Discuss</a>
+			<button href="#" class="btn ghost-btn margin-1000">{{ site.cta }}</button>
+		</ul>
+	</div>
+</header>

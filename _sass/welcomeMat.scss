@@ -1,14 +1,12 @@
 @import "viewports";
 
 .welcome-mat {
-	.content {
+	:last-child {
 		display: flex;
-		align-items: center;
-	}
-	.graphic {
-		img {
-			margin: auto;
-			width: 80%;
+		flex-wrap: wrap;
+
+		a {
+			width: 100%;
 		}
 	}
 }

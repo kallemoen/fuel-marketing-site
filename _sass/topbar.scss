@@ -1,9 +1,74 @@
-nav {
-	ul {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
-		min-width: 400px;
+@import "viewports";
+
+header {
+	display: flex;
+	align-items: center;
+	margin: 2em 0em;
+
+	img, ul {
+		margin: 0em;
+	}
+
+	ul a {
+		margin-right: 2em;
+		&:last-child {
+	    	margin-right: 0em;
+	  	}
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
 	}
 }
+
+
+.overlay {
+   
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.80); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  overflow: hidden;
+
+	img {
+		float: right;
+		margin: 2.2em 2em 0em 0em;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		margin: 7em auto 0 auto;
+
+		a {
+			margin: 0em;
+		}
+	}
+
+}
+
+
+.overlay-content {
+  position: relative;
+  top: 20%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+}
+
+.overlay a {
+  padding: 0.8em;
+  text-decoration: none;
+  font-size: 20px;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+

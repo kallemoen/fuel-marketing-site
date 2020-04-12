@@ -56,3 +56,14 @@
 .no-bold  {
 	font-weight: 400;
 }
+
+// Hide & show
+
+.hide-desk { display: none; }
+.hide-mobile { display: block; }
+
+
+@include for-tablet-landscape-down {
+	.hide-desk { display: block; }
+	.hide-mobile { display: none; }
+}
