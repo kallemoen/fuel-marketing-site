@@ -35,7 +35,7 @@
 
 .btn-group  {
   & > *:not(:first-child) {
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
 }
 
@@ -55,7 +55,6 @@
 @include for-tablet-landscape-down {
   .mobile-stretch {
     display: block;
-    width: 100%;
     margin-bottom: 1em;
     margin-left: 0em;
     text-align: center;

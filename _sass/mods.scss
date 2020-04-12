@@ -4,6 +4,9 @@
 .flex { display: flex; }
 .space-between { justify-content: space-between; }
 .align-content-center { align-items: center; }
+.flex-column { flex-direction: column; }
+.space-around { justify-content: space-around; }
+.flex-start { align-content: flex-start; }
 
 // paddings
 
