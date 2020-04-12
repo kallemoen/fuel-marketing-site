@@ -112,7 +112,7 @@
 .primary-btn {
   @include btn-theme($accent-color);
 
-  box-shadow: 7px 6px 0px -2px $black, 7px 6px 0px 0px $accent-color;
+  box-shadow: 6px 6px 0px -2px $black, 6px 6px 0px 0px $accent-color;
 }
 
 .big-btn {
